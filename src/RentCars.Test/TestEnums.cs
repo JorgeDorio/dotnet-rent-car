@@ -42,10 +42,10 @@ public class TestEnums
 	{
 		Enum.GetName(typeof(RentStatus), valueEntry).Should().Be(expected);
 	}
-	
+
 	[Fact]
 	public void RentStatusFinishedShouldBeTheSameValueAsCancelled()
 	{
-		throw new NotImplementedException();
+		RentStatus.Finished.Should().Be(RentStatus.Cancelled);
 	}
 }
