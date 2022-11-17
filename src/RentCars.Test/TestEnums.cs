@@ -32,7 +32,7 @@ public class TestEnums
 	[InlineData(60, "Hybrid")]
 	public void FuelTypeShouldHaveCorrectValues(int valueEntry, string expected)
 	{
-		throw new NotImplementedException();
+		Enum.GetName(typeof(FuelType), valueEntry).Should().Be(expected);
 	}
 
 	[Theory]
@@ -42,7 +42,7 @@ public class TestEnums
 	{
 		throw new NotImplementedException();
 	}
-
+	
 	[Fact]
 	public void RentStatusFinishedShouldBeTheSameValueAsCancelled()
 	{
