@@ -41,6 +41,11 @@ public class TestRent
     [MemberData(nameof(RentTestData))]
     public void TestCreateRent(Vehicle vehicle, Person person, int daysRented, double expectedPrice)
     {
-        throw new NotImplementedException();
+			Rent rent = new Rent(vehicle, person, daysRented);
+			rent.Vehicle.Should().Be(vehicle);
+			rent.Person.Should().Be(person);
+			rent.DaysRented.Should().Be(daysRented);
+			rent.Price.Should().Be(expectedPrice);
+			rent.Status.Should().Be(RentStatus.Confirmed);
     }
 }
