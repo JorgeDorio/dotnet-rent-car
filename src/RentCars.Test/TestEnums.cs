@@ -40,7 +40,7 @@ public class TestEnums
 	[InlineData(1, "Finished")]
 	public void RentStatusShouldHaveCorrectValues(int valueEntry, string expected)
 	{
-		throw new NotImplementedException();
+		Enum.GetName(typeof(RentStatus), valueEntry).Should().Be(expected);
 	}
 	
 	[Fact]
