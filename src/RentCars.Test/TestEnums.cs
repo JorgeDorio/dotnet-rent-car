@@ -20,7 +20,7 @@ public class TestEnums
 	[InlineData(2, "AllWheelDrive")]
 	public void TractionTypeShouldHaveCorrectValues(int valueEntry, string expected)
 	{
-		throw new NotImplementedException();
+		Enum.GetName(typeof(TractionType), valueEntry).Should().Be(expected);
 	}
 
 	[Theory]
