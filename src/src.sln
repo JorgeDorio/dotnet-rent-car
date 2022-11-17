@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentCars", "RentCars\RentCa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentCars.Test", "RentCars.Test\RentCars.Test.csproj", "{66850787-65B7-4968-B835-122604311DD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentCars.Test.Test", "RentCars.Test.Test\RentCars.Test.Test.csproj", "{5D46EEDE-8EF4-43D1-8444-086CEE1D2770}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
